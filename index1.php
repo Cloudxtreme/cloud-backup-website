@@ -1,26 +1,5 @@
-<html>
-<head>
-<title>Cloud Photo Backup</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Cloud Photo Backup</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#">Home</a></li>    
-      <li><a href="#">Login</a></li>     
-    </ul>
-  </div>
-</nav>
+<?php include('header.php'); ?>
 <div class="container"> 
-  <div class="panel panel-default">
-    <div class="panel-heading">Home</div>
-    <div class="panel-body"></div>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -33,19 +12,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="3.jpg" alt="Chania" width="1200" height="279">
+        <img src="img/3.jpg" alt="Chania" width="1200" height="279">
       </div>
 
       <div class="item">
-        <img src="4.jpg" alt="Chania" width="1200" height="279">
+        <img src="img/4.jpg" alt="Chania" width="1200" height="279">
       </div>
     
       <div class="item">
-        <img src="3.jpg" alt="Flower" width="1200" height="279">
+        <img src="img/3.jpg" alt="Flower" width="1200" height="279">
       </div>
 
       <div class="item">
-        <img src="4.jpg" alt="Flower" width="1200" height="279">
+        <img src="img/4.jpg" alt="Flower" width="1200" height="279">
       </div>
     </div>
 
@@ -82,6 +61,6 @@
   </div>
 </div>
 
-
+<?php include('footer.php'); ?>
 </body>
 </html>

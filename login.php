@@ -1,11 +1,6 @@
-<html>
-<head>
-<title>Cloud Photo Backup</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
-  <style>
-      @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+<?php include('header.php'); ?>
+<style>
+     @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
   width: 360px;
@@ -37,7 +32,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: #2196F3;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -48,7 +43,7 @@
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: #2196F3;
 }
 .form .message {
   margin: 15px 0 0;
@@ -62,83 +57,61 @@
 .form .register-form {
   display: none;
 }
-.container {
+.container1 {
   position: relative;
   z-index: 1;
   max-width: 300px;
   margin: 0 auto;
 }
-.container:before, .container:after {
+.container1:before, .container:after {
   content: "";
   display: block;
   clear: both;
 }
-.container .info {
+.container1 .info {
   margin: 50px auto;
   text-align: center;
 }
-.container .info h1 {
+.container1 .info h1 {
   margin: 0 0 15px;
   padding: 0;
   font-size: 36px;
   font-weight: 300;
   color: #1a1a1a;
 }
-.container .info span {
+.container1 .info span {
   color: #4d4d4d;
   font-size: 12px;
 }
-.container .info span a {
+.container1 .info span a {
   color: #000000;
   text-decoration: none;
 }
-.container .info span .fa {
+.container1 .info span .fa {
   color: #EF3B3A;
 }
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+background:#2980b9;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
 }
-      </style>
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Cloud Photo Backup</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="index.html">Home</a></li>    
-      <li><a href="login.html">Login</a></li>     
-    </ul>
-  </div>
-</nav>
-<div class="container"> 
-
- 
-
-    <br><br>
- <div class="login-page">
-  <div class="form">
-    
+</style>
+<div id="intro" class="section scrollspy">
+    <div class="container1">       
+  <div class="login-page">
+  <div class="form">    
     <form class="login-form">
       <input type="text" placeholder="username"/>
       <input type="password" placeholder="password"/>
-      <button>login</button>
-      
+      <button>login</button>      
     </form>
   </div>
 </div>
 
 
 </div>
-
-
+</div>
+<?php include('footer.php'); ?>
 </body>
 </html>
