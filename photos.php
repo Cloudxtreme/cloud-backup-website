@@ -36,7 +36,7 @@ img:hover
 <div id="intro" class="section scrollspy">
     <div class="container1">       
 <?php
-$folder_path = 'img/'; //image's folder path
+$folder_path = 'uploads/'; //image's folder path
 
 $num_files = glob($folder_path . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);
 
