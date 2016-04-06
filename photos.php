@@ -51,7 +51,7 @@ if($num_files > 0)
   if($extension=='jpg' || $extension =='png' || $extension == 'gif' || $extension == 'bmp') 
   {
    ?>
-            <a href="<?php echo $file_path; ?>"><img src="<?php echo $file_path; ?>"  height="250" /></a><? echo $file ?>
+          <p>  <a href="<?php echo $file_path; ?>"><img src="<?php echo $file_path; ?>"  height="250" /></a><? echo $file."hi"; ?></p>
             <?php
   }
  }
