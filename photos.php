@@ -48,11 +48,12 @@ if($num_files > 0)
  {
   $file_path = $folder_path.$file;
   $extension = strtolower(pathinfo($file ,PATHINFO_EXTENSION));
-  $filename=pathinfo($file, PATHINFO_BASENAME);
-  if($extension=='jpg' || $extension =='png' || $extension == 'gif' || $extension == 'bmp' && ($filename/2) == 0) 
+  $info = pathinfo($file);
+  $file_name =  basename($file,'.'.$info['extension']);
+  if( $extension =='png' && ($file_name%2) == 0) 
   {
    ?>
-            <a href="<?php echo $file_path; ?>"><img src="<?php echo $file_path; ?>"  height="250" /></a>
+           <a href="<?php echo $file_path; ?>"><img src="<?php echo $file_path; ?>"  height="250" /></a>
             <?php
   }
  }
